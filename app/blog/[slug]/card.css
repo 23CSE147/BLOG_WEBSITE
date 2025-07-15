@@ -1,0 +1,33 @@
+.blog-details {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #000000;
+  color: #FFD700;
+  border: 2px solid #FFD700;
+  border-radius: 12px;
+  font-family: 'Georgia', serif;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+  text-align: center;
+}
+
+.blog-details h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #FFD700;
+  padding-bottom: 0.5rem;
+}
+
+.blog-details img {
+  max-width: 100%;
+  height: auto;
+  margin: 2rem 0;
+  border-radius: 10px;
+  border: 2px solid #FFD700;
+}
+
+.blog-details p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  text-align: justify;
+}

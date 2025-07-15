@@ -1,0 +1,70 @@
+.form-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #000000;
+  color: #FFD700; 
+  border: 2px solid #FFD700;
+  border-radius: 12px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.form-container h2 {
+  text-align: center;
+  color: #FFD700;
+  margin-bottom: 1.5rem;
+}
+
+.blog-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-form input[type="text"],
+.blog-form textarea,
+.blog-form input[type="file"] {
+  background-color: #1a1a1a;
+  color: #FFD700;
+  border: 1px solid #FFD700;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.blog-form input::placeholder,
+.blog-form textarea::placeholder {
+  color: #daa520;
+}
+
+.blog-form textarea {
+  resize: vertical;
+}
+
+.blog-form input[type="file"] {
+  color: #fffacd;
+}
+
+.blog-form .image-preview {
+  display: block;
+  margin: 1rem auto;
+  max-width: 100%;
+  border: 2px solid #FFD700;
+  border-radius: 8px;
+}
+
+.blog-form button {
+  padding: 0.75rem;
+  background-color: #FFD700;
+  color: #000000;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.blog-form button:hover {
+  background-color: #e6c200;
+  transform: scale(1.03);
+}
