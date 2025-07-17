@@ -27,6 +27,8 @@ export default function Navbar() {
       </div>
 
       <div className="nav-right">
+     
+     
         {role ? (
           <button className="logout-btn" onClick={handleLogout}>
             Logout ({role})
