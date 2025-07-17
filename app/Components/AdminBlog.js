@@ -26,8 +26,11 @@ export default function AdminBlog({ blogs, hiddenStaticSlugs, onHideStatic }) {
 
   return (
     <div className="admin-table-container">
-      <h2 className="admin-title">Admin Blog Management</h2>
-      <Link href="/createblog" className="create-btn">➕ Create Blog</Link>
+     <h2 className="admin-title">Admin Blog Management</h2>
+      <Link href="/createblog" className="create-btn">
+  <span style={{ marginRight: '6px' }}>✚</span> Create Blog
+</Link>
+
 
       <table className="admin-table">
         <thead>

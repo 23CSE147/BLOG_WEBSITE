@@ -1,19 +1,21 @@
-
 .blog-form {
   max-width: 600px;
   margin: 2rem auto;
   padding: 2rem;
-  background-color: #000000; 
-  color: #FFD700;
-  border: 2px solid #FFD700;
-  border-radius: 12px;
+  background: rgba(15, 32, 39, 0.85);
+  color: #00e5ff;
+  border: 2px solid #00e5ff;
+  border-radius: 16px;
   font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.3);
+  backdrop-filter: blur(8px);
 }
 
 .blog-form h2 {
   text-align: center;
-  color: #FFD700;
+  color: #00e5ff;
   margin-bottom: 1.5rem;
+  text-shadow: 0 0 8px rgba(0, 229, 255, 0.7);
 }
 
 .blog-form form {
@@ -24,19 +26,26 @@
 .blog-form input[type="text"],
 .blog-form textarea,
 .blog-form input[type="file"] {
-  background-color: #1a1a1a;
-  color: #FFD700;
-  border: 1px solid #FFD700;
+  background-color: #121212;
+  color: #00e5ff;
+  border: 1px solid #00e5ff;
   padding: 0.7rem 1rem;
   margin-bottom: 1rem;
-  border-radius: 6px;
+  border-radius: 8px;
   font-size: 1rem;
-  outline: none;
+  transition: all 0.3s ease;
 }
 
 .blog-form input::placeholder,
 .blog-form textarea::placeholder {
-  color: #daa520;
+  color: #7beeff;
+}
+
+.blog-form input:focus,
+.blog-form textarea:focus {
+  outline: none;
+  border-color: #7beeff;
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.4);
 }
 
 .blog-form textarea {
@@ -44,29 +53,31 @@
 }
 
 .blog-form input[type="file"] {
-  color: #fffacd;
+  color: #c9f7ff;
 }
 
 .blog-form button {
   padding: 0.7rem 1rem;
-  background-color: #FFD700;
-  color: #000000;
+  background: linear-gradient(90deg, #00e5ff, #00bcd4);
+  color: #000;
   font-weight: bold;
   border: none;
-  border-radius: 6px;
+  border-radius: 30px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .blog-form button:hover {
-  background-color: #e6c200;
-  transform: scale(1.02);
+  background: #00e5ff;
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(0, 229, 255, 0.7);
 }
 
 .blog-form img {
   display: block;
   margin: 1rem auto;
-  border: 2px solid #FFD700;
+  border: 2px solid #00e5ff;
   border-radius: 8px;
   max-width: 100%;
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.3);
 }

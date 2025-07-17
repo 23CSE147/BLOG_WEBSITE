@@ -2,9 +2,9 @@
   max-width: 400px;
   margin: 4rem auto;
   padding: 2rem;
-  background-color: #000;
-  color: #FFD700;
-  border: 2px solid #FFD700;
+  background-color: #0f0f0f;
+  color: #00e5ff;
+  border: 2px solid #00e5ff;
   border-radius: 12px;
   text-align: center;
   font-family: 'Segoe UI', sans-serif;
@@ -13,7 +13,7 @@
 .login-title {
   font-size: 2rem;
   margin-bottom: 1.5rem;
-  color: #FFD700;
+  color: #00e5ff;
 }
 
 .role-toggle {
@@ -26,16 +26,17 @@
 .role-btn {
   padding: 0.5rem 1rem;
   background-color: transparent;
-  border: 2px solid #FFD700;
-  color: #FFD700;
+  border: 2px solid #00e5ff;
+  color: #00e5ff;
   cursor: pointer;
   border-radius: 6px;
+  font-weight: bold;
   transition: all 0.3s ease;
 }
 
 .role-btn:hover,
 .role-btn.active {
-  background-color: #FFD700;
+  background-color: #00e5ff;
   color: #000;
 }
 
@@ -47,23 +48,28 @@
 
 .login-input {
   padding: 0.75rem;
-  border: 1px solid #FFD700;
+  border: 1px solid #00e5ff;
   background-color: #1a1a1a;
-  color: #FFD700;
+  color: #00e5ff;
   border-radius: 6px;
+}
+
+.login-input:focus {
+  outline: none;
+  border-color: #00e5ff;
 }
 
 .login-button {
   padding: 0.75rem;
-  background-color: #FFD700;
+  background-color: #00e5ff;
   color: #000;
   font-weight: bold;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .login-button:hover {
-  background-color: #e6c200;
+  background-color: #00bcd4;
 }

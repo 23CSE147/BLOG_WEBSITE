@@ -2,8 +2,9 @@
 
 import { useEffect, useState } from 'react';
 import { useParams, notFound } from 'next/navigation';
-import staticBlogs from '../data/blog'; 
-import "./card.css"
+import Link from 'next/link';
+import staticBlogs from '../data/blog';
+import './card.css';
 
 export default function BlogDetails() {
   const [blog, setBlog] = useState(null);
@@ -17,13 +18,16 @@ export default function BlogDetails() {
     setBlog(found);
   }, [params.slug]);
 
-  if (!blog) return <p style={{ padding: '2rem' }}>Loading blog...</p>;
+  if (!blog) return <p className="loading-msg">Loading blog...</p>;
 
   return (
-    <div className="blog-details">
-      <h1>{blog.title}</h1>
-      <img src={blog.image} alt={blog.title} />
-      <p>{blog.content}</p>
-    </div>
+    <section className="blog-detail-wrapper">
+      <article className="blog-card-new">
+        <h2 className="blog-title">{blog.title}</h2>
+        <img src={blog.image} alt={blog.title} className="blog-image" />
+        <div className="blog-content">{blog.content}</div>
+        <Link href="/" className="back-link">← Back to Blogs</Link>
+      </article>
+    </section>
   );
 }
